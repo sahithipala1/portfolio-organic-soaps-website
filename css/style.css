@@ -1,0 +1,300 @@
+/* html , body */
+html, body {
+    height:100%;
+}
+
+body {
+    color:black;
+}
+h1,
+h2,
+h3,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "rocknroll" , assistant;
+}
+p {
+    font-family: "assistant" , sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 24px;
+
+}
+section {
+    background:white;
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* preloader */
+
+#preloader {
+    background-color: rgb(12, 11, 11);
+    position:fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    z-index: 9999 ;
+
+}
+
+#status {
+    background-image: url("../img/preloader/Pulse-1s-200px.gif");
+    background-repeat: no-repeat;
+    width:300px;
+    height:300px;
+    position:absolute;
+    left:50%;
+    top:50%;
+    margin-top: -35px;
+    margin-left: -35px;
+}
+
+
+
+
+/*  Home */
+#home {
+    background: none;
+    height:100%;
+}
+
+#home-bg-video {
+    position:fixed;
+    top:50%;
+    left:50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform:translatex(-50) translateY(-50);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    background: url("../video/organic-fruits.jpg") no-repeat;
+    background-size: cover;
+
+}
+
+#home-overlay {
+    background-color: rgba(163, 167, 175, 0.8);
+    width:100%;
+    height:100%;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index:-1;
+
+
+}
+/* vertically center the content */
+#home-content {
+    width: 100%;
+    height: 100%;
+    display:table;
+}
+
+#home-content-inner {
+    display: table-cell;
+    vertical-align:middle;
+}
+
+#home-heading h1 {
+    color:white;
+    font-size:65px;
+    font-weight: 100px;
+    text-transform: uppercase;
+    margin:0;
+    display:inline-block;
+
+
+}
+#home-heading h1 span {
+    color:teal;
+    font-weight: 500;
+}
+#home-text p {
+    color: white;
+    font-size: 18px;
+    font-weight:100;
+    margin: 8px 0 30px 0;
+}
+
+/* button */
+.btn-general {
+    font-family: "rocknroll" , sans-serif;
+    border-radius:28px;
+    font-size:13px;
+    text-transform: uppercase;
+    margin: 0 6px;
+    padding: 12px 46px 12px 46px;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+
+    
+}
+
+.btn-home {
+    color:white;
+    border : 2px solid white;
+}
+.btn-home:hover, .btn-home:focus {
+    color:white;
+    background: teal;
+    border: 1px solid teal;
+}
+
+/* arrow down */
+
+#arrow-down {
+    position: absolute;
+    left:50%;
+    bottom : 20px;
+    color: white;
+    font-size: 32px;
+    width: 32px;
+    height:32px;
+    text-align: center;
+    margin : -16px;
+    z-index:1;
+
+}
+
+#arrow-down:hover , 
+#arrow-down:focus {
+    color: thistle;
+    
+}
+
+
+/* Content box .................*/
+
+.content-box-lg {
+    padding: 120px 0;
+}
+.content-box-md {
+    padding: 100px 0;
+}
+
+
+
+
+/*  Vertical headings */
+.vertical-heading h5 {
+    color:teal;
+    font-size:40px;
+    font-weight:600;
+    text-transform: uppercase;
+    word-spacing: 9px;
+    display:inline-block;
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    position:relative;
+    top:90px;
+    left: -120px;
+
+
+}
+
+.vertical-heading h2 {
+    margin: 0 0 0 35px;
+    font-size: 100px;
+    font-weight: 100;
+    line-height: 90px;
+    color :green;
+
+
+}
+
+#about-right p:first-child {
+    margin-bottom : 30px;
+    color:black;
+
+}
+
+#about-bottom{
+    margin-top:60px;
+}
+
+#about-bottom img {
+    margin: 0 auto;
+}
+
+/* About 02 styling */
+
+
+#about-02{
+    background-color:rgb(22, 165, 94);
+   
+    
+}
+
+.about-item {
+    background-color: rgb(221, 221, 238);
+    padding: 80px 30px;
+    box-shadow: 0 0 10px black;
+}
+
+.about-item img{
+    font-size: 42px;
+}
+
+.about-item h3 {
+    font-size:24px;
+    margin-bottom:10px;
+}
+
+.about-item hr {
+    width:45px;
+    height:3px;
+    background-color:teal;
+    margin: 0 auto;
+    border:none;
+}
+
+.about-item p {
+    margin-top:20px;
+}
+/* Hover state */
+
+.about-item:hover {
+    background-color: rgb(100, 102, 119);
+}
+
+.about-item:hover img {
+    color:white;
+}
+
+.about-item:hover h3 {
+    color:honeydew;
+}
+
+.about-item:hover p {
+    color:honeydew;
+      
+}
+.about-item:hover img {
+    transform: translateY(30px);
+}
+
+
+/* smooth transition */
+.about-item ,
+.about-item hr {
+    -webkit-transition: all 400ms ease-in-out;
+    transition: all 400ms ease-in-out;
+}
+
+
