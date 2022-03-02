@@ -166,6 +166,16 @@ section {
     background-color:#212226;
     border: 1px solid #212226;
 }
+.btn-white {
+    color:white;
+    background-color:teal;
+    border : 2px solid white;
+}
+.btn-white:hover, .btn-white:focus {
+    color:white;
+    background-color:#212226;
+    border: 1px solid #212226;
+}
 
 
 
@@ -831,6 +841,7 @@ Services 01
     box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
     border-radius: 6px;
     padding: 32px 21px;
+    -webkit-transition: all 400ms linear;
     transition: all 400ms linear;
 
 }
@@ -845,9 +856,11 @@ Services 01
 }
 
 .pricing-table .price {
-    border-top:1px solid #3225ac;
-    border-bottom:1px solid #1d1818;
-    padding:24px 0;
+    border-top:1px solid #e0e0e0;
+    border-bottom:1px solid #e0e0e0;
+    padding: 24px 0 30px 0;
+    
+   
 }
 .pricing-table .price h2{
     font-family: "Open Sans",sans-serif;
@@ -862,7 +875,7 @@ Services 01
 }
 .pricing-table .price h2 span.dollar {
     font-size: 18px;
-    font-weight: 100;
+    font-weight: 400;
     position:absolute;
     left: -20px;
     top:5px;
@@ -873,6 +886,7 @@ Services 01
     position:absolute;
     left:5px;
     bottom: -25px;
+    
 }
 .pricing-table .price p{
     line-height: normal;
@@ -880,3 +894,54 @@ Services 01
     margin:0;
     padding:0;
 }
+
+.pricing-table ul.package{
+    list-style: none;
+    padding:20px 0 0 ;
+
+}
+.pricing-table ul.package li{
+    font-family: "Open Sans",sans-serif;
+    font-size:13px;
+    font-weight: 400;
+    line-height:40px;
+}
+.pricing-table ul.package li i{
+    width:24px;
+}
+.pricing-table .btn-yellow,
+.pricing-table.black .btn-white
+{
+    width:96%;
+}
+.pricing-table:hover h4,
+.pricing-table:hover h2,
+.pricing-table:hover p,
+.pricing-table:hover ul.package{
+    color:white;
+}
+.pricing-table:hover .btn-yellow {
+    background:white;
+    color: teal;
+    border:1px solid white;
+
+}
+.pricing-table .btn-yellow:hover,
+.pricing-table .btn-yellow:focus {
+    background: #212226;
+    color:white;
+    border: 1px solid #212226;
+}
+.pricing-table.black{
+    background-color: #212226;
+    color: #f4f4f4;
+}
+.pricing-table.black .type h4{
+    color:white;
+}
+.pricing-table.black:hover {
+    background: teal;
+}
+
+.
+
