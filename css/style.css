@@ -1046,6 +1046,91 @@ Clients
 
 }
 
+/*******************************************************************
+ Blog Section
+ ********************************************************************/
+
+#blog {
+    background:#f4f4f4;
+}
+#blog h2{
+    font-size:80px;
+
+}
+
+#blog-left p {
+    margin: 25px 0;
+}
+
+#blog-btn a {
+    margin:0;
+}
+
+.blog-post {
+    background-color:white;
+    padding:20px;
+    -webkit-box-shadow:0 0 10px 0 rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
+    border-radius: 6px;
+
+
+}
+
+.blog-post img{
+    height:40px;
+    width:40px;
+}
+
+.blog-post h4{
+    line-height:40px;
+    margin:0;
+}
+
+.blog-post > p{
+    line-height:24px;
+    margin:0;
+    font-weight:300;
+
+
+}
+
+.blog-post a{
+    display:inline;
+    margin-top:25px;
+    text-tranform:uppercase;
+    font-family:"Raleway", sans-serif;
+    color:teal;
+    font-size: 12px;
+    font-weight: 500;
+    text-decoration:none;
+    -webkit-transition: all 400ms linear;
+    transition: all 400ms linear;
+
+
+}
+.blog-post a:hover{
+    color:black;
+
+}
+.blog-post .post-meta{
+    border-top:1px solid #e0e0e0;
+    margin-top:30px;
+    padding-top:10px;
+
+}
+
+.blog-post .post-meta p {
+    font-size:11px;
+    font-famil:"Raleway",sans-serif;
+    line-height:24px;
+    font-weight: 500;
+    margin:0;
+
+
+}
+
+
+
 
 
 
