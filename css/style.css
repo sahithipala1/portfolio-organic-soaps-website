@@ -204,7 +204,9 @@ Button
 }
 
 
-/* Content box .................*/
+/**********************************************************
+ Content box
+ **********************************************************.................*/
 
 .content-box-lg {
     padding: 120px 0;
@@ -212,6 +214,10 @@ Button
 .content-box-md {
     padding: 100px 0;
 }
+.content-box-sm {
+    padding: 90px 0;
+}
+
 
 
 
@@ -1011,3 +1017,35 @@ Stats
     -webkit-transform:translateY(-20px);
    transform:translateY(-20px);
 }
+
+/***********************************************************
+Clients
+ ***********************************************************/
+
+#clients .horizontal-heading{
+    margin-bottom:30px;
+
+}
+
+#clients-list {
+    padding:45px 0 0 0;
+}
+
+.client {
+    padding: 0 10px;
+    max-width:150px;
+    margin: 0 auto;
+    line-height:100px;
+
+}
+
+.client img{
+    display:inline-block !important;
+    width:40px;
+    height: 100px;
+
+}
+
+
+
+
