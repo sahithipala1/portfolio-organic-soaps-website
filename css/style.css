@@ -1129,6 +1129,88 @@ Clients
 
 }
 
+/*******************************************************************
+ Contact Section
+ ********************************************************************/
+
+/*** Contact left side****/
+
+#contact-left p {
+    margin:25px 0 20px 0;
+
+}
+
+ul.office-details{
+    list-style:none;
+    padding:0;
+
+
+}
+
+ul.office-details li{
+    font-family: "Open Sans", sans-serif;
+    margin:12px;
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+
+}
+
+ul.office-details li i {
+    font-size:20px;
+    width:45px;
+
+}
+
+#contact-left ul.social-list li  a{
+    color:black;
+    border: 1px solid #212226;
+    text-align: center;
+
+}
+
+#contact-left ul.social-list li  a:hover{
+    color: white;
+    boder-color:transparent;
+}
+
+/*********** contact-right ************/
+
+#contact-right{
+    background-color:white;
+    padding:25px 30px;
+    -webkit-box-shadow:0 0 10px 0 rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
+    border-radius: 6px;
+
+}
+
+#contact-right h4{
+    font-size:24px;
+
+}
+
+#contact-right p{
+    margin-bottom: 25px;
+}
+
+#contact-right form .form-control{
+    font-family: "Open Sans", sans-serif;
+    padding:10px 15px;
+    font-size:12px;
+    line-height:24px;
+
+}
+
+#contact-right form textarea.form-control{
+    min-height:270px;
+
+
+}
+
+
+
+
 
 
 
