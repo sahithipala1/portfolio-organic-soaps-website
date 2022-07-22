@@ -152,3 +152,115 @@ $(function() {
 
     });
 });
+
+
+/*******************************************************************
+ * Google-map
+ *********************************************************/
+
+// Initialize and add the map
+$ (function initMap() {
+    // The location of Uluru
+    const uluru = { lat: 40.680050, lng: -73.417458};
+    // The map, centered at Uluru
+    const map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 12,
+        center: uluru,
+    });
+    // The marker, positioned at Uluru
+    const marker = new google.maps.Marker({
+        position: uluru,
+        map: map,
+    });
+});
+
+window.initMap = initMap;
+
+
+
+
+/************************************************************
+Navigation
+ ******************************************************************/
+/*
+$(function(){
+    $(window).scroll(function() {
+        //alert('you just scrolled')
+        if($(window).scrollTop() > 100){
+
+           // alert('you have scrolled more than 50px your scroll position is = '+ $(window).scrollTop());
+            $("nav").addClass("white-nav-top");
+
+            $(".navbar-brand img").attr("src", "img/icons8-rose-48.png");
+
+        }else {
+            //Hide white nav bar
+
+            // alert('you have scrolled not more than 50px your scroll position is = '+ $(window).scrollTop());
+
+            $("nav").removeClass("white-nav-top");
+
+            $(".navbar-brand img").attr("src", "img/icons8-kiwi-48.png");
+
+        }
+    });
+});*/
+
+$(function(){
+
+    showHideNav();
+
+    $(window).scroll(function() {
+
+        showHideNav();
+
+    });
+
+    function showHideNav() {
+
+        if ($(window).scrollTop() > 100) {
+
+            // alert('you have scrolled more than 50px your scroll position is = '+ $(window).scrollTop());
+            $("nav").addClass("white-nav-top");
+
+            $(".navbar-brand img").attr("src", "img/icons8-rose-48.png");
+
+            $("#back-to-top").fadeIn();
+
+        } else {
+            //Hide white nav bar
+
+            // alert('you have scrolled not more than 50px your scroll position is = '+ $(window).scrollTop());
+
+            $("nav").removeClass("white-nav-top");
+
+            $(".navbar-brand img").attr("src", "img/icons8-kiwi-48.png");
+
+            $("#back-to-top").fadeOut();
+
+        }
+
+    }
+
+
+
+});
+
+// smooth scrolling
+$(function(){
+
+    $("a.smooth-scroll").click(function(){
+
+        event.preventDefault();
+        // get the section id like #about, #services, #team and etc.
+
+        var section_id = $(this).alert("href");
+
+        $("html, body").animate({
+            scrollTop:$(section_id).offset().top -64
+        },1250, "easeInOutExpo",);
+
+    });
+
+
+});

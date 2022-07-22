@@ -76,8 +76,8 @@ section {
     position:fixed;
     top:50%;
     left:50%;
+    transform:translateX(-50%) translateY(-50%);
     -webkit-transform: translateX(-50%) translateY(-50%);
-    transform:translatex(-50) translateY(-50);
     min-width: 100%;
     min-height: 100%;
     width: auto;
@@ -114,7 +114,7 @@ section {
 #home-heading h1 {
     color:white;
     font-size:65px;
-    font-weight: 100px;
+    font-weight: 100;
     text-transform: uppercase;
     margin:0;
     display:inline-block;
@@ -177,6 +177,17 @@ Button
     color:white;
     background-color:#212226;
     border: 1px solid #212226;
+}
+
+.btn-back-to-top{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    padding: 3px 15px;
+    border-radius:4px;
+    font-size:22px;
+
+
 }
 
 
@@ -698,8 +709,8 @@ Services 01
 .portfolio-item img{
     width:100%;
     height:auto;
-    -webkit-transition: -webkit-transform 5.s ease;
-    transition:-webkit-transform 5.s ease;
+    -webkit-transition: -webkit-transform .5s ease;
+    transition:-webkit-transform .5s ease;
     transition: transform .5s ease;
     transition:transform .5s ease, -webkit-transform .5s ease;
    
@@ -830,7 +841,7 @@ Services 01
 
 .testimonial p{
     line-height: normal;
-    margin:0; 
+    margin: 0;
     margin-top: 5px;
     margin-bottom:20px;
 }
@@ -1205,6 +1216,96 @@ ul.office-details li i {
 #contact-right form textarea.form-control{
     min-height:270px;
 
+
+}
+
+
+/*******************************************
+Google maps
+ **************************************************/
+
+#map{
+    height:600px;
+
+}
+
+
+/*******************************************
+Footer Area
+ **************************************************/
+
+footer{
+    background-color:#212226;
+    padding:30px;
+
+}
+
+footer p {
+    color:white;
+    line-height:20px;
+}
+
+footer p span{
+    color: #f4c613;
+
+}
+
+/*******************************************
+Header Area
+ **************************************************/
+
+.navbar{
+    padding: 35px 0 20px 0;
+}
+.site-nav-wrapper{
+    padding:0 85px;
+
+}
+.navbar-brand{
+    padding: 13px 15px;
+
+}
+
+ul.navbar-nav > li > a {
+    font-family: 'Raleway,sans-serif';
+    color: #fff;
+    font-size: 13px;
+    font-weight: 400;
+    text-transform:uppercase;
+    letter-spacing: 1px;
+
+}
+ul.navbar-nav > li > a:hover,
+ul.navbar-nav > li > a:focus{
+    background:none;
+    color: teal;
+}
+
+/*White Navigation*/
+
+.white-nav-top{
+    background:white;
+    padding:10px 0;
+    box-shadow: 0 8px 6px -9px #999;
+    -webkit-box-shadow:0 8px 6px -9px #999;
+    z-index:2;
+}
+.white-nav-top ul.navbar-nav > li > a{
+    color:#212226;
+
+}
+.white-nav-top ul.navbar-nav > li > a:hover,
+.white-nav-top  ul.navbar-nav > li > a:focus{
+    color:teal;
+
+}
+/*
+scroll spy active state
+*/
+
+.white-nav-top ul.navbar-nav > li.active > a{
+    color:teal;
+    font-weight:500;
 
 }
 
